@@ -23,7 +23,6 @@ The "individual" mode requires customers to accumulate points on a per-product b
 
 This model provides flexibility in how campaigns are structured, allowing for tailored promotional strategies that can accommodate different purchasing behaviors and preferences.
 
-
 ``` JSON title="Sample Campaign Data Model" hl_lines="11 13 14 15 16"
 {
   "campaignId": "7cf8f7ea-f7cc-4800-8ccc-6ee868781e35",
@@ -66,3 +65,55 @@ This model provides flexibility in how campaigns are structured, allowing for ta
 }
 ```
 ### Customer Data Model Overview
+The customer loyalty data model is designed to capture and represent the points a customer accumulates through participation in various loyalty campaigns. This model enables tracking of points earned on multiple products within individual campaigns, as well as the ability to accumulate points across different campaigns concurrently. The JSON example below illustrates how customer loyalty information is structured, focusing specifically on the loyaltyCampaigns section.
+
+Key features of the loyaltyCampaigns section include:
+
+- **Multiple Campaign Participation**: Customers can be active in more than one loyalty campaign at a time, allowing for diverse avenues of engagement and reward accumulation.
+- **Product-Specific Points**: Within each campaign, points are tracked on a per-product basis. This granularity supports tailored rewards that reflect the customer's specific purchasing behaviors.
+- **Campaign and Item Identification**: Each loyalty campaign and associated product is uniquely identified (via campaignId and itemId), ensuring precise tracking and attribution of earned points.
+- **Point Accumulation**: The model captures the number of points earned for each product (earned), offering a clear view of the customer's progress towards reward thresholds.
+
+``` JSON title="Sample Customer Data Model" hl_lines="12-37"
+{
+  "customerId": "a9f62394-13ed-43e0-9baf-4a60223304da",
+  "displayName": "John Doe",
+  "isCreditAllowed": true,
+  "privateCustomer": {
+    "firstName": "John",
+    "lastName": "Doe",
+    "mobilePhone": "123-45-97890",
+    "email": "johndoe@example.com",
+    "isCustomerClubMember": true,
+    "customerClubMember": {},
+    "loyaltyCampaigns": [
+      {
+        "campaignId": "7cf8f7ea-f7cc-4800-8ccc-6ee868781e35",
+        "type": "free",
+        "loyaltyItems": [
+          {
+            "itemId": "e593f5c4-6474-4d0b-a20d-c4de6d483bbc",
+            "earned": 7
+          }
+        ]
+      },
+      {
+        "campaignId": "9f06f0a2-26c3-4e67-ae8d-e68d7849303a",
+        "type": "free",
+        "loyaltyItems": [
+          {
+            "itemId": "64e5ed48-4893-4502-bf51-c6b9ae593b80",
+            "earned": 6
+          },
+          {
+            "itemId": "15bf8efc-4202-4214-a567-25ca722bc784",
+            "earned": 3
+          }
+        ]
+      }
+    ]
+  },
+  "displayNameCalculated": "John Doe"
+}
+```
+
