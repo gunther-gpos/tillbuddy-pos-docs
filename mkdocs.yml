@@ -42,3 +42,6 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+
+copyright: |
+  &copy; 2024 <a href="https://github.com/Geta/tillbuddy-pos-v2"  target="_blank" rel="noopener">Øystein Günther</a>
