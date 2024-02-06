@@ -10,7 +10,7 @@ The campaign data model allows merchants to customize a variety of rules and set
 The "One For Free" campaign is internally designated as "free". This identifier must be used precisely as shown, including case sensitivity, to ensure proper configuration.
 
 #### triggerAmount
-This parameter sets the threshold for activating the campaign. It requires an integer value greater than 0, with 10 being a typical setting. The triggerAmount determines the number of purchases needed for a customer to qualify for a free product.
+This parameter sets the threshold for activating the campaign. It requires an integer value of minimum 2, with 10 being a typical setting. The triggerAmount determines the number of purchases needed for a customer to qualify for a free product.
 
 #### aggregateMode
 This setting dictates the manner in which customer points are accumulated across specific products within the campaign, such as product A and B. Points are awarded per product purchase, impacting how the free product is earned.  Legal values are <span style="color: teal;">**all**</span> and <span style="color: teal;">**individual**</span>.
