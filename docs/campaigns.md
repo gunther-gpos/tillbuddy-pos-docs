@@ -21,7 +21,7 @@ In the "all" mode, points from purchases of all relevant products are aggregated
 ##### individual
 The "individual" mode requires customers to accumulate points on a per-product basis. For example, with a triggerAmount of 10, a customer must purchase 10 of product A to receive the tenth product A for free, effectively paying for only 9.
 
-This model provides flexibility in how campaigns are structured, allowing for tailored promotional strategies that can accommodate different purchasing behaviors and preferences.
+This model offers a versatile approach to structuring campaigns, enabling customized promotional strategies that cater to diverse purchasing habits and preferences. For instance, imagine you own a coffee shop and wish to launch a loyalty program for your customers. You could introduce a scheme where "a coffee is a coffee," indicating that regardless of the size, type, or price of the coffee purchased, customers are entitled to their 10th coffee for free. With this strategy, you would set the aggregateMode to "all" allowing for a unified treatment of all coffee purchases under the loyalty program.
 
 ``` JSON title="Sample Campaign Data Model" hl_lines="11 13 14 15 16"
 {
