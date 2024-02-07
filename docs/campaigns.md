@@ -74,7 +74,7 @@ Key features of the loyaltyCampaigns section include:
 - **Campaign and Item Identification**: Each loyalty campaign and associated product is uniquely identified (via campaignId and itemId), ensuring precise tracking and attribution of earned points.
 - **Point Accumulation**: The model captures the number of points earned for each product (earned), offering a clear view of the customer's progress towards reward thresholds.
 
-``` JSON title="Sample Customer Data Model" hl_lines="12-37"
+``` JSON title="Sample Customer Data Model" hl_lines="12-42"
 {
   "customerId": "a9f62394-13ed-43e0-9baf-4a60223304da",
   "displayName": "John Doe",
