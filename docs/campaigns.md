@@ -94,6 +94,7 @@ Key features of the loyaltyCampaigns section include:
         "loyaltyItems": [
           {
             "itemId": "e593f5c4-6474-4d0b-a20d-c4de6d483bbc",
+            "name": "Spesialkaffe liten",
             "earned": 7
           }
         ]
@@ -105,10 +106,12 @@ Key features of the loyaltyCampaigns section include:
         "loyaltyItems": [
           {
             "itemId": "64e5ed48-4893-4502-bf51-c6b9ae593b80",
+            "name": "Spesialkaffe liten",
             "earned": 6
           },
           {
             "itemId": "15bf8efc-4202-4214-a567-25ca722bc784",
+            "name": "Spesialkaffe stor",
             "earned": 3
           }
         ]
