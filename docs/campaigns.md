@@ -89,6 +89,7 @@ Key features of the loyaltyCampaigns section include:
     "loyaltyCampaigns": [
       {
         "campaignId": "7cf8f7ea-f7cc-4800-8ccc-6ee868781e35",
+        "name": "Kaffedeal",
         "type": "free",
         "loyaltyItems": [
           {
@@ -99,6 +100,7 @@ Key features of the loyaltyCampaigns section include:
       },
       {
         "campaignId": "9f06f0a2-26c3-4e67-ae8d-e68d7849303a",
+        "name": "Kaffeavtalen",
         "type": "free",
         "loyaltyItems": [
           {
